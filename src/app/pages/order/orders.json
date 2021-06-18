@@ -1,0 +1,34 @@
+[
+  {
+    "OrderNumber": 1,
+    "OrderDueDate": "2021-05-31",
+    "CustomerBuyerName": "Karthik",
+    "CustomerAddress": "Hyderabad",
+    "CustomerPhone": "4526987123",
+    "OrderTotal": 12
+  },
+  {
+    "OrderNumber": 2,
+    "OrderDueDate": "2021-06-01",
+    "CustomerBuyerName": "Karthik",
+    "CustomerAddress": "Hyderabad",
+    "CustomerPhone": "4526987123",
+    "OrderTotal": 12
+  },
+  {
+    "OrderNumber": 3,
+    "OrderDueDate": "2021-06-05",
+    "CustomerBuyerName": "Karthik",
+    "CustomerAddress": "Hyderabad",
+    "CustomerPhone": "4526987123",
+    "OrderTotal": 12
+  },
+  {
+    "OrderNumber": 4,
+    "OrderDueDate": "2021-06-09",
+    "CustomerBuyerName": "Karthik",
+    "CustomerAddress": "Hyderabad",
+    "CustomerPhone": "4526987123",
+    "OrderTotal": 12
+  }
+]

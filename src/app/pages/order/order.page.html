@@ -1,0 +1,74 @@
+<div>
+  <div class="row">
+    <div class="col-sm-11"></div>
+    <div>
+      <button class="btn btn-primary float-right" (click)="AddNew()">New Order</button>
+    </div>
+  </div>
+  <div class="container" style="text-align: center;">
+    <div class="row" style="padding: 5px; border: solid black 1px;">
+      <div class="col-sm">
+        OrderNumber
+      </div>
+      <div class="col-sm">
+        OrderDueDate
+      </div>
+      <div class="col-sm">
+        CustomerBuyerName
+      </div>
+      <div class="col-sm">
+        CustomerAddress
+      </div>
+      <div class="col-sm">
+        CustomerPhone
+      </div>
+      <div class="col-sm">
+        OrderTotal
+      </div>
+      <div class="col-sm">
+        Edit
+      </div>
+      <div class="col-sm">
+        Delete
+      </div>
+    </div>
+    <div class="row" *ngFor="let order of orders" style="padding: 5px;">
+      <div class="col-sm">
+        {{ order.OrderNumber }}
+      </div>
+      <div class="col-sm">
+        {{order.OrderDueDate}}
+      </div>
+      <div class="col-sm">
+        {{order.CustomerBuyerName}}
+      </div>
+      <div class="col-sm">
+        {{order.CustomerAddress}}
+      </div>
+      <div class="col-sm">
+        {{order.CustomerPhone}}
+      </div>
+      <div class="col-sm">
+        {{order.OrderTotal}}
+      </div>
+      <div class="col-sm">
+        <button type="button" class="btn btn-primary" (click)="Edit(order)"> Edit</button>
+      </div>
+      <div class="col-sm">
+        <button type="button" class="btn btn-warning" (click)="DeletePopupOpen(order,delete)"> Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #delete let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Are you sure to delete Order?</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body row">
+    <div class="col-sm-6"></div>
+    <button type="button" class="btn btn-primary" (click)="Delete()">Yes</button>
+  </div>
+</ng-template>
